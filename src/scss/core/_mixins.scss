@@ -1,0 +1,25 @@
+@function rem($pixels) {
+  @return ($pixels / $defaultFontSize * 1rem);
+}
+
+@mixin txt($fontSize, $fontFamily, $lineHeight) {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  line-height: $lineHeight;
+}
+
+@mixin titles() {
+  font-size: $fontSizeTitlesMobile;
+  line-height: $lineHeight;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: $fontFamilyTitle;
+}
+
+//@mixin media($width) {
+//  @media only screen and (min-width: $width) {
+//    @content;
+//  }
+//}

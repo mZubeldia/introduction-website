@@ -1,0 +1,55 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+
+  @media (min-width: 760px) {
+    font-size: $fontSizeDesk;
+  }
+
+  .hero__image {
+    background: url(../images/cover.jpg);
+    background-size: cover;
+    background-image: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .hero__elements {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $defaultColorWhite;
+
+    .hero__title {
+      font-family: $fontFamilyTitle;
+      font-size: 42px;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      font-weight: bold;
+      line-height: 55px;
+      word-spacing: 100vw;
+    }
+  }
+}
+
+@media (min-width: 760px) {
+  .hero .hero__elements .hero__title {
+    font-size: 80px;
+    line-height: 106px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .hero__elements .hero__title {
+    font-size: 100px;
+    line-height: 132px;
+  }
+}

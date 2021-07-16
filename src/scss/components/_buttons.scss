@@ -1,0 +1,110 @@
+//////arrows ///////
+
+.arrow-icon {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  transition: transform;
+  :hover {
+    transform: scale(1.1);
+  }
+
+  .arrow-line__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    padding: 10px;
+  }
+}
+
+.reasons-icon {
+  position: absolute;
+  bottom: -25px;
+  left: calc(50% - 22.5px);
+  transition: transform;
+  :hover {
+    transform: scale(1.1);
+  }
+}
+
+.hero-icon {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  transition: transform;
+  :hover {
+    transform: scale(1.1);
+  }
+}
+
+////// tips //////
+
+.button-go {
+  background-color: transparent;
+  width: 76px;
+  border-radius: 45px;
+  border: 3px solid #f26202;
+  display: inline-block;
+  cursor: pointer;
+  color: #f26202;
+  font-family: Verdana;
+  font-size: 17px;
+  padding: 12px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #f26202;
+  margin-top: 30px;
+  transition: transform;
+}
+.button-go:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+.button-go:active {
+  position: relative;
+  top: 1px;
+}
+
+/////// purchase ///////
+
+.more-reasons-button {
+  background-color: #f26202;
+  border-radius: 27px;
+  border: 1px solid #f26202;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 20px;
+
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #f26202;
+  height: 45px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 30px;
+
+  transition: transition;
+}
+.more-reasons-button:hover {
+  background-color: #f26202;
+  transform: scale(1.1);
+}
+.more-reasons-button:active {
+  top: 1px;
+}
+
+//////// footer
+
+.heart-icon {
+  color: red;
+}

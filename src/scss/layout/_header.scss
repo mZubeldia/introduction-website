@@ -1,0 +1,14 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0271bc;
+  height: 44px;
+  width: 44px;
+  z-index: 1;
+
+  .menu-burger__link {
+    padding: 12px 12px;
+  }
+}

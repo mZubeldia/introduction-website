@@ -1,0 +1,120 @@
+* {
+  @include txt($fontSizeMobile, $fontFamily, $lineHeight);
+  @media (min-width: 760px) {
+    font-size: $fontSizeDesk;
+  }
+}
+
+////shared///
+
+.main-titles {
+  @include titles();
+  @media (min-width: 760px) {
+    font-size: $fontSizeTitlesTablet;
+  }
+  @media (min-width: 1200px) {
+    font-size: $fontSizeTitlesDesk;
+  }
+}
+
+//////////// tips //////
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  @media (min-width: 760px) {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  .tips__article__title {
+    color: $backgroundBlue;
+    background-color: $defaultColorWhite;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+}
+////////// purchase
+
+.purchase {
+  position: relative;
+  text-align: center;
+
+  background-color: $defaultLightBlue;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  .purchase__title {
+    font-weight: bold;
+    text-transform: capitalize;
+    grid-column: span 3;
+    grid-row: 1/2;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .purchase__article {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+
+    .article__title {
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+
+  .item2 {
+    grid-column: span 3;
+  }
+
+  .item3 {
+    grid-column: span 3;
+  }
+
+  .item4 {
+    grid-column: span 3;
+  }
+}
+
+@media (min-width: 760px) {
+  .purchase {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    .purchase__title {
+      grid-row: span 1;
+    }
+    .item2 {
+      grid-column: span 1;
+      grid-row: 2/3;
+    }
+
+    .item3 {
+      grid-column: span 1;
+      grid-row: 2/3;
+    }
+
+    .item4 {
+      grid-column: span 1;
+      grid-row: 2/3;
+    }
+    .item5 {
+      grid-column: 2/3;
+      grid-row: span 1;
+    }
+  }
+}
